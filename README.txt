@@ -7,5 +7,5 @@ Files: pointarray.cpp
 Errors: N/A
 References: N/A
 Instructions: 
-- g++ pointarray.cpp -o pointer
-- ./pointer 5
+- g++ pointarray.cpp -o pointarray
+- ./pointarray 5
