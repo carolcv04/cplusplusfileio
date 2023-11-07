@@ -6,29 +6,34 @@ using namespace std;
 //determines the maximum value in the array
 void maxval(int* x, int size){
     int maxval = x[0];
+    int *p = &x[0];
     
     for(int i=0; i < size ; i++){
-        if(x[i] > maxval){
+        if(maxval < *p){
             maxval = x[i];
         }
+        p++;
     }
+
     cout << "Maximum Value: " << maxval << endl;
 }
 //determined the mininmu avlue in the arrray
 void minval(int* x, int size){
     int minval = x[0];
-    
+    int *p = &x[0];
+
     for(int i=0; i < size ; i++){
-        if(minval > x[i]){
+        if(minval > *p){
             minval = x[i];
         }
+        p++;
     }
+
     cout << "Minimum Value: " << minval << endl;
 }
 //reverses the array
 void rev_array(int* x, int size){
     cout << "Reversed Array: " << endl; 
-
     int *p = &x[size-1];
     for (int i = 0; i < size; i++){
         cout << *p << " ";
