@@ -86,8 +86,6 @@ int main(int argc, char *argv[]){
     cout << endl;
     rev_array(array, size);
 
-    delete arr[];
-
     return 0;
 
 }
